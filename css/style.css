@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(196, 4, 4, 0.2);
+    border-radius: 8px;
+}
+
+.container main {
+    position: relative; /* ← referencia para el menú */
+}
+
+.container main img {
+    width: 100%;
+    display: block;
+}
+
+/* ---- Menú lateral ---- */
+.menu {
+    position: absolute; /* ← relativo al main, no a la pantalla */
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.menu ul li a {
+    width: 42px;
+    height: 42px;
+    background-color: #746f6f;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.menu ul li a img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    filter: invert(1);
+}
+
+.menu ul li a:hover {
+    width: 54px;
+    background-color: #333;
+}
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: rgb(221, 10, 10);
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: rgb(221, 10, 10);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(221, 10, 10);
+}
+input[type=password] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.multimedia-contenido {
+    display: flex;          /* ← esto los pone lado a lado */
+    flex-direction: row;    /* ← fila, no columna */
+    gap: 16px;
+    padding: 20px;
+}
+
+.multimedia-contenido iframe {
+    width: 50%;             /* ← cada uno ocupa la mitad */
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+    flex: 1;                /* ← se reparten el espacio igual */
+}
+.pie-pagina {
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+footer {
+    
+    padding-top: 20px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgba(25, 83, 5, 0.2);
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+footer ul li a {
+    background: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+footer ul li a img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+footer ul li a:hover {
+    background: rgb(223, 116, 17);
+    color: white;
+}
+input[type=text], 
+input[type=password],
+input[type=number],
+input[type=email],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
